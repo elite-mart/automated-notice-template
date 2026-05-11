@@ -1,0 +1,125 @@
+:root {
+            --primary-color: #d4af37; /* Gold/Yellow from logo */
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .notice-container {
+            background: white;
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid var(--primary-color);
+            position: relative;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .academy-name {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .date-line {
+            text-align: right;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Main Notice Style */
+        .urgent-title {
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+            margin: 20px 0;
+            color: #000;
+        }
+
+        .notice-body {
+            line-height: 1.8;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .section-title {
+            font-weight: 700;
+            text-decoration: underline;
+            margin-top: 25px;
+        }
+
+        /* Schedule Box */
+        .schedule-box {
+            background-color: #fffdf2;
+            border: 1px dashed var(--primary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .schedule-box p {
+            margin: 8px 0;
+            font-weight: 600;
+        }
+
+        /* Instructions */
+        .instructions ul {
+            list-style-type: "★ ";
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Signature */
+        footer {
+            margin-top: 50px;
+            text-align: right;
+            line-height: 1.4;
+        }
+
+        .signature-name {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        /* Watermark effect (Optional) */
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.05;
+            z-index: 0;
+            width: 300px;
+            pointer-events: none;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .notice-container { box-shadow: none; border: 1px solid #eee; }
+          }
