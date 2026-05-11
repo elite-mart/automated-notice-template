@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqra Academy Notice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #d4af37; /* Gold/Yellow from logo */
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .notice-container {
+            background: white;
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid var(--primary-color);
+            position: relative;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .academy-name {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .date-line {
+            text-align: right;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Main Notice Style */
+        .urgent-title {
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline;
+            margin: 20px 0;
+            color: #000;
+        }
+
+        .notice-body {
+            line-height: 1.8;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .section-title {
+            font-weight: 700;
+            text-decoration: underline;
+            margin-top: 25px;
+        }
+
+        /* Schedule Box */
+        .schedule-box {
+            background-color: #fffdf2;
+            border: 1px dashed var(--primary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .schedule-box p {
+            margin: 8px 0;
+            font-weight: 600;
+        }
+
+        /* Instructions */
+        .instructions ul {
+            list-style-type: "★ ";
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Signature */
+        footer {
+            margin-top: 50px;
+            text-align: right;
+            line-height: 1.4;
+        }
+
+        .signature-name {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        /* Watermark effect (Optional) */
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.05;
+            z-index: 0;
+            width: 300px;
+            pointer-events: none;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .notice-container { box-shadow: none; border: 1px solid #eee; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notice-container">
+        <header>
+            <h1 class="academy-name">Iqra Academy</h1>
+            <p class="contact-info">
+                Nagaish, Brahmanpara, Comilla<br>
+                Mobile: 01726342545, 01674249598 | Email: samadsabbir770@gmail.com
+            </p>
+        </header>
+
+        <div class="date-line">Date: 03/12/2025</div>
+
+        <h2 class="urgent-title">জরুরী নোটিশ</h2>
+
+        <div class="notice-body">
+            <p><strong>বার্ষিক পরীক্ষা-২০২৫ এর শুভ সূচনা সংক্রান্ত:</strong></p>
+            <p>এতদ্বারা ইকরা একাডেমির সকল সম্মানিত অভিভাবক ও প্রিয় শিক্ষার্থীদের অবগতির জন্য জানানো যাচ্ছে যে, শিক্ষাবর্ষ ২০২৫-এর বার্ষিক পরীক্ষা আগামীকাল, রোজ বৃহস্পতিবার থেকে শুরু হতে চলেছে। আমরা প্রত্যাশা করি, শিক্ষার্থীরা পূর্ণ প্রস্তুতি এবং উৎসাহ নিয়ে এই পরীক্ষায় অংশগ্রহণ করবে।</p>
+
+            <p class="section-title">পরীক্ষার সময়সূচি (প্রথম দিন)</p>
+            <div class="schedule-box">
+                <p>তারিখ: ৪ ডিসেম্বর, ২০২৫ ইং</p>
+                <p>শ্রেণী: প্রথম, দ্বিতীয়, তৃতীয়, চতুর্থ ও পঞ্চম</p>
+                <p>বিষয়: ইংরেজি</p>
+                <p>সময়: সকাল ৯:৩০ টা</p>
+            </div>
+
+            <p class="section-title">শিক্ষার্থীদের জন্য নির্দেশাবলী</p>
+            <div class="instructions">
+                <ul>
+                    <li>নির্দিষ্ট সময়ের ৩০ মিনিট পূর্বে অবশ্যই পরীক্ষা কেন্দ্রে উপস্থিত হতে হবে।</li>
+                    <li>পরীক্ষার জন্য প্রয়োজনীয় সকল উপকরণ (যেমন কলম, পেন্সিল, জ্যামিতি বক্স ইত্যাদি) সঙ্গে আনতে হবে।</li>
+                    <li>পরীক্ষার হলে শৃঙ্খলা বজায় রাখা বাধ্যতামূলক।</li>
+                </ul>
+            </div>
+            <p>সকলের দীর্ঘায়ু, সুস্থতা এবং পরীক্ষার সফলতা কামনা করি।</p>
+        </div>
+
+        <footer>
+            <p>আদেশক্রমে,<br>
+            <span class="signature-name">প্রধান শিক্ষক</span><br>
+            ইকরা একাডেমি</p>
+        </footer>
+    </div>
+
+</body>
+</html>
